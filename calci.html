@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+    <div class="body">
+        <div class="name">
+            Calculator
+        </div>
+        <div class="calci">
+            <input type="text" class="input" id="input">
+            <div class="lines">
+                <input type="button" value="clear" class="clear" id="clear" onclick="clearScreen()">
+                <input type="button" value="x" class="x" id="x" onclick="popFunction()">
+            </div>
+            <div class="lines">
+                <input type="button" value="1" class="numbers" id="numbers" onclick="display('1')">
+                <input type="button" value="2" class="numbers" id="numbers" onclick="display('2')">
+                <input type="button" value="3" class="numbers" id="numbers" onclick="display('3')">
+                <input type="button" value="/" class="numbers" id="numbers" onclick="display('/')">
+            </div>
+            <div class="lines">
+                <input type="button" value="4" class="numbers" id="numbers" onclick="display('4')">
+                <input type="button" value="5" class="numbers" id="numbers" onclick="display('5')">
+                <input type="button" value="6" class="numbers" id="numbers" onclick="display('6')">
+                <input type="button" value="-" class="numbers" id="numbers" onclick="display('-')">
+            </div>
+            <div class="lines">
+                <input type="button" value="7" class="numbers" id="numbers" onclick="display('7')">
+                <input type="button" value="8" class="numbers" id="numbers" onclick="display('8')">
+                <input type="button" value="9" class="numbers" id="numbers" onclick="display('9')">
+                <input type="button" value="+" class="numbers" id="numbers" onclick="display('+')">
+            </div>
+            <div class="last-lines">
+                <input type="button" value="." class="numbers" id="numbers" onclick="display('.')">
+                <input type="button" value="0" class="numbers" id="numbers" onclick="display('0')">
+                <input type="button" value="=" class="numbers" id="equal" onclick="calculate()">
+                <input type="button" value="*" class="numbers" id="numbers" onclick="display('*')">
+            </div>
+        </div>
+    </div>
+    <script src="calci.js"></script>
+</body>
+</html>
